@@ -1,6 +1,7 @@
 #ifndef COOKERYBOOK_RECIPE_H
 #define COOKERYBOOK_RECIPE_H
 
+#include <iostream>
 #include "Ingredients .h"
 #include <vector>
 
@@ -14,5 +15,17 @@ public:
             : name(name), ingredients(ingredients), making(making) {}
 
 
+            std::string GetName() const{
+                return name;
+    }
+    void displayRecipe() const {
+        std::cout << "Рецепт: " << name << std::endl;
+        std::cout << "Ингредиенты:" << std::endl;
+        for (const auto& ingredient : ingredients) {
+            std::cout << "- " << ingredient.quantity << " " << ingredient.product << std::endl;
+        }
+        std::cout << "Приготовление:" << std::endl;
+        std::cout << making << std::endl;
+    }
 };
 #endif //COOKERYBOOK_RECIPE_H
