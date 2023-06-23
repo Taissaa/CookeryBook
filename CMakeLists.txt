@@ -3,4 +3,4 @@ project(CookeryBook)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(CookeryBook main.cpp Recipe.h Book.h)
+add_executable(CookeryBook main.cpp Recipe.h Book.h "Ingredients .h")
