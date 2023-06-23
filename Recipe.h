@@ -14,7 +14,6 @@ public:
     Recipe(std::string name, std::vector<Ingredient> ingredients, std::string making)
             : name(name), ingredients(ingredients), making(making) {}
 
-
             std::string GetName() const{
                 return name;
     }
