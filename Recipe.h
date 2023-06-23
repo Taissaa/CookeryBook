@@ -19,12 +19,12 @@ public:
                 return name;
     }
     void displayRecipe() const {
-        std::cout << "Рецепт: " << name << std::endl;
-        std::cout << "Ингредиенты:" << std::endl;
+        std::cout << "Recipe: " << name << std::endl;
+        std::cout << "Ingredients:" << std::endl;
         for (const auto& ingredient : ingredients) {
             std::cout << "- " << ingredient.quantity << " " << ingredient.product << std::endl;
         }
-        std::cout << "Приготовление:" << std::endl;
+        std::cout << "Making:" << std::endl;
         std::cout << making << std::endl;
     }
 };

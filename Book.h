@@ -13,7 +13,7 @@ public:
     }
 
     void displayCookbook() const {
-        std::cout << "Кулинарная книга" << std::endl;
+        std::cout << "Cookery Book" << std::endl;
         for (const auto& recipe : recipes) {
             recipe.displayRecipe();
             std::cout << std::endl;
